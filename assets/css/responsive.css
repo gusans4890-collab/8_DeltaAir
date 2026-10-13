@@ -278,16 +278,21 @@
     .container {
         padding: 0 30px;
     }
+
     .menu_inner {
         padding: 0;
     }
 
+    /* banner */
     #banner .banner_txt p {
         display: none;
     }
+
     #banner .banner_txt .more {
         margin-top: 20px;
     }
+
+    /* icon menu */
     ul.icon_menu li {
         padding: 17px 0;
     }
@@ -319,10 +324,66 @@
     .delta_desc li {
         line-height: 20px;
     }
+
+    /* SNS 전체 */
+    #footer ul.footer_sns {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        row-gap: 8px;
+        width: 100%;
+        margin: 20px auto 0;
+        padding: 0;
+    }
+
+    #footer ul.footer_sns > li {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 12px;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    /* 첫 번째 줄: SNS 아이콘 */
+    #footer ul.footer_sns > li:nth-child(1) {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    /* 두 번째 줄: 한국어 */
+    #footer ul.footer_sns > li:nth-child(2) {
+        grid-column: 1;
+        padding-right: 10px;
+        border-right: 1px solid #fff;
+    }
+
+    /* 두 번째 줄: English */
+    #footer ul.footer_sns > li:nth-child(3) {
+        grid-column: 2;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    /* 언어 글씨 크기 */
+    #footer ul.footer_sns > li:nth-child(2) a,
+    #footer ul.footer_sns > li:nth-child(3) a,
+    #footer ul.footer_sns > li:nth-child(2) span {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    /* 아이콘 크기 */
+    #footer ul.footer_sns i {
+        font-size: 16px;
+    }
 }
 
 /* ==============================
-   320px 이하 (작은 모바일)
+    320px 이하 (작은 모바일)
 ============================== */
 @media (max-width: 320px) {
     .container {
@@ -339,5 +400,19 @@
 
     .firstMenu {
         font-size: 13px;
+    }
+
+    #footer ul.footer_sns {
+        column-gap: 6px;
+    }
+
+    #footer ul.footer_sns > li:nth-child(2) {
+        padding-right: 6px;
+    }
+
+    #footer ul.footer_sns > li:nth-child(2) a,
+    #footer ul.footer_sns > li:nth-child(3) a,
+    #footer ul.footer_sns > li:nth-child(2) span {
+        font-size: 11px;
     }
 }

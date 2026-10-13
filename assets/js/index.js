@@ -22,3 +22,23 @@ $("#mNav button").click(function () {
 $(".firstMenu").click(function () {
     $(this).next(".footer_dropdown").slideToggle(500);
 });
+
+// top 버튼
+
+$(window).scroll(function () {
+    let scrollTop = $(window).scrollTop();
+
+    // 헤더 배경 변경
+    if (scrollTop > 100) {
+        $("#header").addClass("active");
+    } else {
+        $("#header").removeClass("active");
+    }
+
+    // TOP 버튼 표시
+    if (scrollTop > 800) {
+        $(".top").addClass("show");
+    } else {
+        $(".top").removeClass("show");
+    }
+});

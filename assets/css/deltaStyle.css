@@ -434,3 +434,17 @@ ul.footer_sns li:nth-child(3) {
     text-align: left;
     padding-left: 20px;
 }
+
+.top {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    color: #ba0707b7;
+    font-size: 40px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.top.show {
+    opacity: 1;
+}
