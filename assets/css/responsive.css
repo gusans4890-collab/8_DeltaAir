@@ -1,5 +1,5 @@
 /* ==============================
-   1300px 이하
+    1300px 이하
 ============================== */
 @media (max-width: 1300px) {
     .container {
@@ -12,7 +12,7 @@
 }
 
 /* ==============================
-   1100px 이하
+    1100px 이하
 ============================== */
 @media (max-width: 1100px) {
     .container {
@@ -27,9 +27,12 @@
 }
 
 /* ==============================
-   960px 이하
+    960px 이하
 ============================== */
 @media (max-width: 960px) {
+    #mNav {
+        display: block;
+    }
     .container {
         padding: 0 30px;
         box-sizing: border-box;
@@ -108,7 +111,7 @@
 }
 
 /* ==============================
-   768px 이하 (태블릿/모바일)
+    768px 이하 (태블릿/모바일)
 ============================== */
 @media (max-width: 768px) {
     /* 전체 컨테이너 */
@@ -131,7 +134,8 @@
 
     #banner .banner_txt h1 {
         font-size: 1.5em;
-        margin-bottom: 5px;
+        line-height: 1.4;
+        margin-bottom: 20px;
     }
 
     #banner .banner_txt p {
@@ -144,7 +148,7 @@
         width: 160px;
         height: 35px;
         font-size: 14px;
-        margin: 5px auto 0;
+        margin: 25px auto 0;
     }
 
     /* main */
@@ -183,13 +187,10 @@
         align-items: center;
         margin-bottom: 30px;
     }
-
-    /* 인기 주제어 숨김 */
     .popular_menu {
         display: none;
     }
 
-    /* 메뉴 세로 정렬 */
     .footer_menu {
         display: flex;
         flex-direction: column;
@@ -200,7 +201,6 @@
         width: 100%;
     }
 
-    /* 회사소개, 고객서비스 등 */
     .firstMenu {
         display: flex;
         justify-content: space-between;
@@ -212,18 +212,18 @@
         cursor: pointer;
     }
 
-    /* 화살표 표시 */
     .firstMenu .fa-angle-down {
         display: block;
         font-size: 14px;
     }
 
-    /* 하위 메뉴 숨김 */
     .footer_dropdown {
         display: none;
     }
+    .footer_dropdown.slide {
+        display: block;
+    }
 
-    /* 설명 문구 */
     .delta_desc {
         margin-top: 40px;
         font-size: 12px;
@@ -272,7 +272,7 @@
 }
 
 /* ==============================
-   480px 이하 (모바일)
+    480px 이하 (모바일)
 ============================== */
 @media (max-width: 480px) {
     .container {

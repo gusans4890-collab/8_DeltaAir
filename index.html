@@ -10,6 +10,9 @@
         <!-- Swiper -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
 
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico" />
+        <link rel="shortcut icon" href="assets/img/favicon.png" />
         <!-- 스타일시트 -->
         <link rel="stylesheet" href="assets/css/font.css" />
         <link rel="stylesheet" href="assets/css/reset.css" />
@@ -21,7 +24,34 @@
     </head>
 
     <body>
-        <!-- header -->
+        <!-- 모바일 네비 시작 -->
+        <div id="mNav">
+            <button><i class="fa-solid fa-bars"></i></button>
+            <nav>
+                <ul>
+                    <li><a href="#">예약</a></li>
+                    <li><a href="#">체크인</a></li>
+                    <li><a href="#">나의항공</a></li>
+                    <li><a href="#">항공편</a></li>
+                    <li><a href="#">여행정보</a></li>
+                    <li><a href="#">마일즈</a></li>
+                    <li><a href="#">도움말</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-bell"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 모바일 네비 끝 -->
+
         <header id="header">
             <div class="container header_inner">
                 <div class="logo">
@@ -330,7 +360,7 @@
                         <li class="firstMenu">고객 서비스<i class="fa-solid fa-angle-down"></i></li>
                         <ul class="footer_dropdown">
                             <li><a href="#">도움말</a></li>
-                            <li><a href="#">트위터로 문의</a></li>
+                            <li><a href="#">메시지 보내기</a></li>
                             <li><a href="#">의견/고객의 말씀</a></li>
                         </ul>
                     </ul>
@@ -384,29 +414,10 @@
 
         <!-- 제이쿼리 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="assets/js/index.js"></script>
 
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".hero", {
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                },
-                autoplay: {
-                    delay: 1500,
-                    disableOnInteraction: false,
-                },
-                effect: "fade",
-            });
-
-            // 헤더 스크롤
-            $(window).scroll(function () {});
-        </script>
+        <script src="assets/js/swiper.js"></script>
     </body>
 </html>
