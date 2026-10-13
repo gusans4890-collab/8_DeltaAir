@@ -278,11 +278,16 @@
     .container {
         padding: 0 30px;
     }
+    .menu_inner {
+        padding: 0;
+    }
 
     #banner .banner_txt p {
         display: none;
     }
-
+    #banner .banner_txt .more {
+        margin-top: 20px;
+    }
     ul.icon_menu li {
         padding: 17px 0;
     }
